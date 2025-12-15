@@ -16,8 +16,9 @@ const techIcons = {
   Linux: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
   "VS Code": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
   Spring: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
-  PostgreSQL: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-  API: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openapi/openapi-original.svg"
+  PostgreSQL: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", 
+  API: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openapi/openapi-original.svg",
+  Firebase: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"
 };
 
 export default function Portfolio() {
@@ -36,7 +37,7 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans">
-      
+
       {/* HERO */}
       <section className="hero">
         <h1>
@@ -59,13 +60,28 @@ export default function Portfolio() {
         <section className="container text-center">
           <h2 className="text-3xl font-semibold mb-6">Sobre mim</h2>
           <p className="max-w-3xl mx-auto text-zinc-400 leading-relaxed">
-            Sou um desenvolvedor Full Stack com um forte interesse em construir
-            soluções digitais que sejam eficientes, escaláveis e que proporcionem
-            uma ótima experiência ao usuário. Minha jornada na programação começou
-            com a curiosidade de entender como a tecnologia funciona e rapidamente
-            se tornou uma paixão por criar aplicações web do zero. Estou sempre em
-            busca de novos desafios e oportunidades para aprimorar minhas
-            habilidades.
+            Desenvolvedor Focado em Entregar Resultados (React, Tailwind CSS, JS, Firebase, Java, Node.js, APIs REST)
+            <br/><br/>
+            
+            Minha experiência é voltada para a criação de soluções web performáticas e intuitivas, com foco em métricas de negócio e performance técnica.
+            <br/><br/>
+
+            Sou o criador do FinControl, um app de gestão financeira onde React e Tailwind CSS formaram o Front-End de alto desempenho funcionando sem travamentos e com muita fluidez. Utilizei JavaScript Puro para lógica otimizada e Firebase como database escalável.
+            <br/><br/>
+            
+            Destaques de Entrega no FinControl:
+            <br/><br/>
+
+            Performance: Otimização de componentes React que reduziu o tempo de carregamento inicial em até 35%.
+            <br/><br/>
+
+            Engajamento: Design intuitivo com Tailwind CSS que levou a um aumento de 17% no desempenho de uso diário do aplicativo.
+            <br/><br/>
+
+            Escalabilidade: Arquitetura de dados no Firebase que suporta em torno de 100.000 usuários e milhares de registros com estabilidade.
+            <br/><br/>
+
+            Disponível para desafios que exigem proficiência em todo o ciclo de vida do produto e uma mentalidade orientada a resultados.
           </p>
         </section>
       </AnimateOnScroll>
@@ -78,14 +94,14 @@ export default function Portfolio() {
           <div className="grid">
             <AnimateOnScroll>
               <TechCard
-                title="Frontend"
+                title="Front-End"
                 items={["HTML", "CSS", "JavaScript", "React"]}
               />
             </AnimateOnScroll>
             <AnimateOnScroll>
               <TechCard
-                title="Backend"
-                items={["Java", "Node.js", "APIs REST"]}
+                title="Back-End"
+                items={["Java", "Node.js", "Firebase", "APIs REST"]}
               />
             </AnimateOnScroll>
             <AnimateOnScroll>
@@ -107,9 +123,24 @@ export default function Portfolio() {
               <ProjectCard
                 title="FinControl"
                 description="Controle financeiro com autenticação e dados em tempo real."
-                tech="React · Firebase · CSS"
+                tech="ReactJS · Firebase · TailwindCSS"
                 github="https://github.com/VictorMussoline/FinControl-Open"
                 demo="https://fincontrolvm.web.app/login"
+              />
+              <br/>
+              <ProjectCard
+                title="Base de Conhecimento de Games Retrô"
+                description="Projeto feito na imersão da Alura usando IA."
+                tech="ReactJS · Firebase · TailwindCSS"
+                github="https://github.com/VictorMussoline/imersao-dev-alura-10"
+                demo="https://victormussoline.github.io/imersao-dev-alura-10/"
+              />
+              <br/>
+              <ProjectCard
+                title="Portfólio Fotográfico"
+                description="Em breve."
+                tech="ReactJS · JavaScript Puro · TailwindCSS"
+                github="https://github.com/VictorMussoline"
               />
             </AnimateOnScroll>
           </div>
@@ -121,11 +152,14 @@ export default function Portfolio() {
         <section className="bg-zinc-900">
           <div className="container">
             <h2 className="text-3xl font-semibold mb-8 text-center">Diferenciais</h2>
-            <ul className="grid md:grid-cols-2 gap-4 text-zinc-400">
-              <li className="flex items-center gap-2">✔ Código limpo e organizado</li>
-              <li className="flex items-center gap-2">✔ Projetos open source</li>
-              <li className="flex items-center gap-2">✔ Documentação clara (README)</li>
-              <li className="flex items-center gap-2">✔ Estudo contínuo de boas práticas</li>
+            <ul className="grid md:grid-cols-2 gap-4 text-zinc-400 list-none">
+              <li className="flex items-center gap-2"> Desenvolvimento full-stack com foco em aplicações funcionais, organizadas e de fácil manutenção</li>
+              <li className="flex items-center gap-2"> Experiência prática com projetos reais, utilizando Git, GitHub e versionamento de código</li>
+              <li className="flex items-center gap-2"> Criação de interfaces utilizando JavaScript moderno e React, com componentização e reutilização de código</li>
+              <li className="flex items-center gap-2"> Atenção à experiência do usuário (UX), aplicando boas práticas de usabilidade e feedback visual</li>
+              <li className="flex items-center gap-2"> Capacidade de análise e resolução de problemas, com abordagem orientada a soluções</li>
+              <li className="flex items-center gap-2"> Código estruturado seguindo boas práticas, padrões de projeto e legibilidade</li>
+              <li className="flex items-center gap-2"> Background técnico em suporte e manutenção, trazendo visão prática dos problemas enfrentados por usuários finais</li>
             </ul>
           </div>
         </section>
