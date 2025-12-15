@@ -7,11 +7,11 @@
 
 /* VARIÁVEIS */
 :root {
-  --bg-main: #09090b;
+  --bg-main: #212121;
   --bg-secondary: #18181b;
-  --bg-card: #27272a;
-  --text-main: #f4f4f5;
-  --text-muted: #a1a1aa;
+  --bg-card: #1b1b33;
+  --text-main: #F5F5F5;
+  --text-muted: #FFFAF0;
   --primary: #6366f1;
   --primary-hover: #4f46e5;
   --border: #3f3f46;
